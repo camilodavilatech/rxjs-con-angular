@@ -1,0 +1,16 @@
+<app-list-products />
+
+<ul>
+  @for (item of products; track $index) {
+  <li>
+    <h2>
+      <span style="font-weight: bold; text-decoration: underline">
+        {{ item.name }}
+      </span>
+      <span> ${{ item.price }} </span>
+    </h2>
+  </li>
+  }
+</ul>
+
+<app-shareinfo [product]="'Este es mi product'" />

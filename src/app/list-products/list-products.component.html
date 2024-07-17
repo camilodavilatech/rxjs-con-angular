@@ -1,0 +1,32 @@
+<form
+  [formGroup]="checkoutForm"
+  (ngSubmit)="saveProduct()"
+  style="display: flex; flex-direction: column"
+>
+  <label>
+    <input type="number" placeholder="Id del Producto" formControlName="id" />
+  </label>
+  <label>
+    <input
+      type="text"
+      placeholder="Nombre del Producto"
+      formControlName="name"
+    />
+  </label>
+  <label>
+    <input
+      type="number"
+      placeholder="Precio del Producto"
+      formControlName="price"
+    />
+  </label>
+  <label>
+    <input
+      type="text"
+      placeholder="Descripcion del Producto"
+      formControlName="description"
+    />
+  </label>
+
+  <button type="submit">Add Product</button>
+</form>
